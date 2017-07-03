@@ -11,6 +11,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule }   from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicliDeVidaComponent } from './cicli-de-vida/cicli-de-vida.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
     MeuPrimeiro2Component,
     DataBindingComponent,
     InputPropertyComponent,
-    OutputPropertyComponent  
+    OutputPropertyComponent,
+    CicliDeVidaComponent  
   ],
   imports: [
     BrowserModule,
