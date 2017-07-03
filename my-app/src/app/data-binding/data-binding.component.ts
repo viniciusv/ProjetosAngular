@@ -11,7 +11,14 @@ export class DataBindingComponent implements OnInit {
   cursoAngular: boolean = true;
   urlImagem: string ="http://icon-icons.com/icons2/851/PNG/512/pikachu_icon-icons.com_67535.png";
   valorAtual = '';
+  nome: string = 'abc';
 
+  nomeDoCurso: string = 'vinicius curso';
+
+  pessoa: any = {
+    nome: 'vini',
+    idade: 20
+  }
 
   getCurso(){
     return true;
