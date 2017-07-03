@@ -1,0 +1,49 @@
+<section class="property-binding">
+  <article>
+    <h3>interpolação</h3>
+    <p>teste de interpolação: {{ url }}</p>
+    <p>teste de interpolação: {{ 1 + 1 }}</p> 
+    <p>teste de interpolação: {{ 1 + 1  + getValor()}}</p> 
+    <p>teste de interpolação: {{ cursoAngular && getCurso() }}</p> 
+  </article>
+
+  <article>
+    <h3>property binding </h3>
+    <img src="{{ urlImagem }}">
+    <img [src]="urlImagem">
+  </article>
+
+   <article>
+    <h3>Class e Style binding</h3>
+    <div> 
+      Escolha uma opção:
+      <!-- #classe é tipo uma variavel local, (change) é um evento-->
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br>
+
+      <div class="alert {{ classe.value }}" role="alert">
+        Texto colorido 
+      </div>
+
+      <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
+        Texto colorido só aparece se ele 
+      </div>
+    </div>
+  </article>
+
+  <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="clica()" class="btn btn-primary">Click - me</button>
+    </div>
+
+    <input type="text" (keyup)="onKeyUp($event)">
+    <p>valor atual: {{ valorAtual }}</p>
+  </article>
+
+</section>
