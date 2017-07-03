@@ -20,6 +20,10 @@ export class DataBindingComponent implements OnInit {
     idade: 20
   }
 
+  onMudouValor(evento){
+    console.log(evento.novoValor);
+  }
+
   getCurso(){
     return true;
   }

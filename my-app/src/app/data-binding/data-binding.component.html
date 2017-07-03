@@ -65,8 +65,12 @@
   <article>
     <h3>Input / Output properties</h3>
     <div>
+      input
       <app-input-property [nome]="nomeDoCurso"></app-input-property>
     </div>
-   
+   <div>
+     <!-- ficar atento se for variavel tem q passar com o [] -->
+     <app-output-property valor=10 (mudouValor)="onMudouValor($event)"></app-output-property>
+   </div>
   </article>
 </section>

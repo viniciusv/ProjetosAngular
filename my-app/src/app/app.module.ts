@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 
 import { FormsModule }   from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
     MeuPirmeiroComponent,
     MeuPrimeiro2Component,
     DataBindingComponent,
-    InputPropertyComponent  
+    InputPropertyComponent,
+    OutputPropertyComponent  
   ],
   imports: [
     BrowserModule,
